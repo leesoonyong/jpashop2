@@ -3,8 +3,6 @@ package jpabook.jpashop.domain;
 import lombok.Getter;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
 
 @Embeddable
 @Getter

@@ -1,5 +1,6 @@
 package jpabook.jpashop.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,7 +21,6 @@ public class Order {
     @GeneratedValue
     @Column(name = "order_id")
     private Long id;
-
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
